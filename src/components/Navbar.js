@@ -70,5 +70,4 @@ function Navbar() {
     </footer>
   );
 }
-
-export default Navbar;
+export default Navbar
