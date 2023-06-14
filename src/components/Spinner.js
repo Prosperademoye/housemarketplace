@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-function Spinner() {
+export const Spinner = () => {
   return (
-    <div className="loadingSpinnerContainer">
+    <div className='loadingSpinnerContainer'>
       <div className="loadingSpinner"></div>
     </div>
-  );
+  )
 }
 
-export default Spinner;
+export default Spinner

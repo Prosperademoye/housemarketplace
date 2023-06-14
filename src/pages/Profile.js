@@ -1,10 +1,13 @@
 import React from "react";
 import { getAuth, updateProfile } from "firebase/auth";
-import { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { updateDoc, doc } from "firebase/firestore";
 import { db } from "../firebase.config";
 import { toast } from "react-toastify";
+import arrowRight  from "../assets/svg/keyboardArrowRightIcon.svg";
+import { Link } from 'react-router-dom'
+import homeIcon  from "../assets/svg/homeIcon.svg";
 
 function Profile() {
   const auth = getAuth();
@@ -84,6 +87,10 @@ function Profile() {
             />
           </form>
         </div>
+        <Link to="/create-listing" className="createListing">
+          <img src={homeIcon} alt="" />
+          <p>Sell or rent your home </p> <img src={arrowRight} alt="" />
+        </Link>
       </main>
     </div>
   );
