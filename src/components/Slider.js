@@ -70,7 +70,7 @@ function Slider() {
         <Swiper
           slidesPerView={1}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 2000 }}
           navigation
         >
           {listings.map(({ data, id }) => (

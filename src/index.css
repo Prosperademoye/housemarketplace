@@ -537,6 +537,7 @@ button {
   position: relative;
   width: 100vw;
   height: 50vh;
+  cursor: pointer;
 }
 
 .swiperSlideImg {
