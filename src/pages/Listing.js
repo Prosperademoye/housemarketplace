@@ -48,7 +48,7 @@ function Listing() {
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 2000 }}
         navigation
       >
         {listing.imgUrls.map((url, index) => (
